@@ -37,22 +37,22 @@ public class ProgramaImc {
 
     public void definirStatusDoAluno(){
 
-        if (imcDoAluno < 18.5){
+        if (imcDoAluno < 18.6){
             statusDoAluno = "abaixo do peso";
-        }
-        if (imcDoAluno >= 18.5 && imcDoAluno <25.0){
+
+        }else if (imcDoAluno >= 18.6 && imcDoAluno <=24.9){
             statusDoAluno = "peso ideal (parabéns!)";
-        }
-        if (imcDoAluno>= 25.0 && imcDoAluno <30.0){
+
+        }else if (imcDoAluno>= 25.0 && imcDoAluno <=29.9){
             statusDoAluno = "levemente acima do peso";
-        }
-        if (imcDoAluno >= 30.0 && imcDoAluno <35.0){
+
+        }else if (imcDoAluno >= 30.0 && imcDoAluno <=34.9){
             statusDoAluno = "Obesidade garu 1";
-        }
-        if (imcDoAluno >= 35.0 && imcDoAluno <40.0){
+
+        }else if (imcDoAluno >= 35.0 && imcDoAluno <=39.9){
             statusDoAluno = "Obesidade grau 2 (severa)";
-        }
-        if (imcDoAluno >=40){
+
+        }else{
             statusDoAluno = "Obesidade grau 3 (mórbida)";
         }
 

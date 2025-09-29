@@ -10,6 +10,7 @@ public class ImcAcademiaApp {
         System.out.println("------------------------------");
         System.out.println("Calculadora IMC para academia");
         System.out.println("------------------------------");
+        System.out.println();
 
         br.com.jandira.senai.imcacademia.model.ProgramaImc programa = new ProgramaImc();
         programa.obterDadosDoAuno();

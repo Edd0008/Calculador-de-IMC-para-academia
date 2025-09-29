@@ -13,7 +13,7 @@ public class ImcAcademiaApp {
         System.out.println();
 
         br.com.jandira.senai.imcacademia.model.ProgramaImc programa = new ProgramaImc();
-        programa.obterDadosDoAuno();
+        programa.obterDadosDoAluno();
 
     }
 }

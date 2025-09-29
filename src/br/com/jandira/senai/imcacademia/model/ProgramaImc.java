@@ -10,7 +10,7 @@ public class ProgramaImc {
     double imcDoAluno;
     String statusDoAluno;
 
-    public void obterDadosDoAuno(){
+    public void obterDadosDoAluno(){
         Scanner leitor = new Scanner(System.in);
 
         System.out.print("Digite o nome do aluno(a): ");
@@ -28,8 +28,7 @@ public class ProgramaImc {
 
     public void calcularImcDoAluno(){
 
-        alturaDoAluno = (alturaDoAluno * alturaDoAluno);
-        imcDoAluno = (pesoDoAluno/ alturaDoAluno);
+        imcDoAluno = pesoDoAluno / (alturaDoAluno * alturaDoAluno);
 
 
         definirStatusDoAluno();
@@ -47,7 +46,7 @@ public class ProgramaImc {
             statusDoAluno = "levemente acima do peso";
 
         }else if (imcDoAluno >= 30.0 && imcDoAluno <35.0){
-            statusDoAluno = "Obesidade garu 1";
+            statusDoAluno = "Obesidade grau 1";
 
         }else if (imcDoAluno >= 35.0 && imcDoAluno <40.0){
             statusDoAluno = "Obesidade grau 2 (severa)";
@@ -63,7 +62,7 @@ public class ProgramaImc {
 
         System.out.println("---Resultados---");
         System.out.println("Aluno: " + nomeDoAluno);
-        System.out.println("ImcCalculado: " + imcDoAluno);
+        System.out.printf("IMC calculado: %.2f%n", imcDoAluno);
         System.out.println("Status: " + statusDoAluno);
         System.out.println("----------------");
     }
